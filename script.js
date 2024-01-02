@@ -11,6 +11,10 @@ function createGrids() {
         const square = document.createElement("div");
         square.classList.add("square");
         container.appendChild(square);
+
+        square.addEventListener('mouseover', event => {
+            square.style.cssText = "background: black";
+        });
     }
 }
 
