@@ -15,16 +15,15 @@ body {
 }
 
 #container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 800px;
-    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 960px;
+    height: 960px;
     margin: auto;
     border: 1px solid black;
 }
 
 .square {
-    flex: 0 0 calc(100% / 16);
-    background-color: #ffffff;
     border: 1px solid black;
 }
